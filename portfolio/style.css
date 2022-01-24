@@ -164,6 +164,7 @@ h1 {
   height: 55px;
   max-width: 220px;
   transition: 0.5s;
+  width: 100%;
 }
 .button:hover {
   background-color: #fdefc6;
@@ -242,7 +243,7 @@ h1 {
   margin: 0 15px;
   line-height: 21px;
 }
-}
+
 
 .portfolio-box {
   display: flex;
@@ -362,6 +363,7 @@ h1 {
 
 .contact-item {
   max-width: 450px;
+  width: 100%;
 }
 
 .contact-container h2 {
@@ -376,6 +378,7 @@ h1 {
 .contact-container-items {
   margin: 20px 20px 0 0;
   max-width: 450px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #BDAE82;
   box-sizing: border-box;
@@ -385,6 +388,7 @@ h1 {
   padding: 16px 10px;
   resize: none;
   color: #FFFFFF
+  
 }
 
 textarea.contact-container-items {

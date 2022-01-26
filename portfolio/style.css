@@ -217,11 +217,11 @@ h1 {
 }
 
 .skill-item:nth-child(2) {
-  background-image: url('assets/svg/image.svg');
+background-image: url('assets/svg/video.svg');  
 }
 
 .skill-item:nth-child(3) {
-  background-image: url('assets/svg/video.svg');
+  background-image: url('assets/svg/image.svg');
 }
 
 .skill-item:nth-child(4) {
@@ -240,7 +240,7 @@ h1 {
   font-size: 18px;
   font-family: 'Inter', sans-serif;
   color: #FFFFFF;
-  margin: 0 15px;
+  margin: 0px 10px;
   line-height: 21px;
 }
 
@@ -289,7 +289,10 @@ h1 {
 
 .video-player img {
   max-width: 100%;
+  height: 418px;
+  object-fit: cover;
 }
+
 
 .video-player button {
   background-image: url('assets/svg/Play_hover.svg');
@@ -492,8 +495,7 @@ textarea.contact-container-items {
     margin-bottom: 96px;
   }
   .video-player {
-    
-    margin: 66px -20px 127px;
+      margin: 66px -20px 96px;
 }
 
   .title {
@@ -507,7 +509,7 @@ textarea.contact-container-items {
 .portfolio-box {
   flex-wrap: wrap;
   font-size: 0;
-  margin: 62px auto 65px;
+  margin: 65px auto 2px;
   max-width: 455px;
   gap: 5px;
   display: flex;
@@ -519,8 +521,10 @@ textarea.contact-container-items {
   gap: 56px;
 }
 .prais-items {
-  max-width: 420px;
-  height: 505px;
+    max-width: 420px;
+    width: 100%;
+    height: 505px;
+
 }
 .contact-container {
   justify-content: center;

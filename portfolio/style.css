@@ -16,7 +16,6 @@ body {
   margin: 0;
 
 }
-
 a {
   text-decoration: none;
   transition: color 0.3s ease;
@@ -590,3 +589,8 @@ h1 {
   padding: 0 0;
 }
 }
+.portfolio-box-button.active{
+  color: #000;
+  background-color: #bdae82;
+}
+

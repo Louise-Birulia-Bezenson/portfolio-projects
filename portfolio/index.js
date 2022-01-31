@@ -58,7 +58,7 @@ function getTranslate(lang){
   });
 }
 
-getTranslate(localStorage.getItem('lang'));
+getTranslate(localStorage.getItem('lang') || "en");
 
 pageLanguages.forEach((el) => {
   el.addEventListener('click', (clickedEl)=> { 

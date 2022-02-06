@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: black;
+    --text-color: #FFFFFF;
+    --text-decoration: Roboto, sans-serif;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    padding: 5px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    background: transparent;
+    border: 0;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: var(--text-decoration);
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    transition: color .8s cubic-bezier(.165, .84, .44, 1);
+}
+
+.nav-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(180deg, #1b1b1b, #ffffff, #ffffff, #1b1b1b);
+    opacity: 0.3;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+
+.nav-button:hover {
+    color: #bdae82;
+}
+
+.nav-button-active {
+    color: #bdae82;
+}
+
+.nav-button-active:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+.list-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-container-img {
+    flex: 1;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-container-img:hover {
+    transition: 0.5s;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    background-image: url(assets/img/forest.jpg);
+    background-size: cover;
+}
+
+.player-button {
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    background-size: contain;
+    border: 0;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.play {
+    cursor: pointer;
+    background-image: url(assets/svg/play.svg);
+}
+
+.pause {
+    cursor: pointer;
+    background-image: url(assets/svg/pause.svg);
+}
+
+.player-button:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.play:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    list-style-type: none;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    list-style-type: none;
+    gap: 20px;
+    font-size: 20px;
+    font-family: var(--text-decoration);
+}
+
+.footer-nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+}

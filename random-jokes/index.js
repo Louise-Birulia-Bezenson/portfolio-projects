@@ -6,7 +6,11 @@ let index =0;
 let quotes = null;
 
 buttonQuote.addEventListener('click', onButtonQuoteClick);
-getData().then((data) => quotes = data);
+getData().then((data) => {
+    quotes = data;
+    onButtonQuoteClick();
+});
+
 
 function getRandom(min, max) {
     let random = Math.floor(Math.random() * (max - min + 1) + min)
@@ -26,7 +30,6 @@ async function getData() {
 function onButtonQuoteClick() {
     imgs.classList.add("grow");
     setTimeout(timer,300);
-
     if (quotes != null){
         const a = getRandom(0, quotes.length);
         txtWindows.textContent = getQuote(a);

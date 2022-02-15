@@ -58,6 +58,7 @@ async function getDataRu() {
 
 function onButtonQuoteClick() {
     imgs.classList.add("grow");
+    buttonQuote.classList.add("grow");
     setTimeout(timer,300);
     console.log(lang);
     if (lang == "en"){
@@ -73,4 +74,5 @@ function onButtonQuoteClick() {
 }
 function timer(){
     imgs.classList.remove("grow");
+    buttonQuote.classList.remove("grow");
 }

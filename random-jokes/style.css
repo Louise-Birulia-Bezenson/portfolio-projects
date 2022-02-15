@@ -43,13 +43,15 @@ main{
     flex-wrap: wrap;
     height: calc(100vh - 200px);
     box-sizing: border-box;
-    gap: 30px;
+    gap: 75px;
 }
 .grow{
     -webkit-transform: scale(1.6);
     -ms-transform: scale(1.6);
     transform: scale(1.6);
+    
   }
+
 .button{
     text-decoration: none;
     display: inline-block;

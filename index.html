@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link type="image-x-icon" href="img/icon.svg" rel="icon">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1>tic-tac-toe</h1>
+        <div>
+            <button class="heder-button player-button play" data-audio="audio/sound.mp3">Sound:<span id="sound-switch-on">on</span> <span id="sound-switch-off">Off</span></button>
+            <button class="heder-button" id="statistic" >Statistic</button>
+            <div id="statistic-game">
+                <div id="modal-window-statistic">
+                    <div class="content"> Statistic </div>
+                    <table class="stat-table">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>date</td>
+                                <td>result</td>
+                                <td>move</td>
+                            </tr>
+                        </thead>
+                        <tbody id="new-tr">
+                        </tbody>
+                    </table>
+                    <div class="statistic-btn">
+                        <button class="statistic-play" data-save="save">Сlear</button>
+                        <button class="statistic-play" data-save="statistic-closes">Closes</button>
+                    </div>
+                </div>
+    </header>
+
+    <main>
+        <div id="play-game">
+                <div id="modal-window-play">
+                    <div class="content"> Play game</div>
+                    <div class="game-btn">
+                        <button class="btn-play" data-players="1"> 1 player</button>
+                        <button class="btn-play" data-players="2">2 player</button>
+                    </div>
+                </div>
+        </div>
+
+        <div class="game-zon">
+            <div id="item-game-zon">
+                <div class="box" data-num="0"></div>
+                <div class="box" data-num="1"></div>
+                <div class="box" data-num="2"></div>
+                <div class="box" data-num="3"></div>
+                <div class="box" data-num="4"></div>
+                <div class="box" data-num="5"></div>
+                <div class="box" data-num="6"></div>
+                <div class="box" data-num="7"></div>
+                <div class="box" data-num="8"></div>
+            </div>
+        </div>
+
+        <div id="result-game">
+            <div id="overlay">
+                <div id="modal-window">
+                    <div id="content"> conetnt</div>
+                    <div id="content-move"> conetnt</div>
+                    <button id="btn-close"> New game</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <ul class="footer-nav">
+            <li>©</li>
+            <li>2022</li>
+            <li><a href="https://github.com/Louise-Birulia-Bezenson">GitHub</a></li>
+        </ul>
+        <div>
+            <a href="https://rs.school/js-stage0/"> <button class="footer-button"></button></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

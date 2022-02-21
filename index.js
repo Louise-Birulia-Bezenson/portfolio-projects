@@ -23,7 +23,44 @@ const btnPlay = document.getElementsByClassName('btn-play');
 let player = 0;
 const btnStatistic =document.getElementById('statistic');
 const statistic =document.getElementById('statistic-game');
-const actionStatisyic =document.getElementsByClassName('statistic-play')
+const actionStatisyic =document.getElementsByClassName('statistic-play');
+const buttonPlayPause = document.querySelector('.player-button');
+const soundSwitchOn = document.getElementById('sound-switch-on');
+const soundSwitchOff = document.getElementById('sound-switch-off');
+const audio = new Audio ("audio/sound.mp3");
+
+buttonPlayPause.addEventListener('click', onButtonPlayPauseClick);
+function onButtonPlayPauseClick() {
+    if (buttonPlayPause.classList.contains("play")) {
+        buttonPlayPause.classList.add("pause");
+        buttonPlayPause.classList.remove('play');
+        soundSwitchOff.style.display = 'none';
+        soundSwitchOn.style.display = 'inline';
+        playAudio();
+    } else {
+        buttonPlayPause.classList.add("play");
+        buttonPlayPause.classList.remove('pause');
+        soundSwitchOn.style.display = 'none';
+        soundSwitchOff.style.display = 'inline';
+        
+        pauseAudio();
+    }
+}
+
+function playAudio(src) {
+    if (src) {
+        audio.src = src;
+    }
+    audio.currentTime = 0;
+    audio.play();
+}
+
+
+
+function pauseAudio() {
+    audio.pause();
+}
+
 
 btnStatistic.addEventListener('click', e =>{
     statistic.style.display = 'block';
@@ -72,9 +109,7 @@ var concat = function(a,b,c){
 }
 
 var botZero = function(){
-      //проверка комбинаций на О
     for (i = 0; i< winResult.length; i++){
-        // var resultZero = concat(i, i + 3, i + 6);
         var resultZero = concat(winResult[i][0], winResult[i][1], winResult[i][2]);
         if (typeof resultZero === "object" && resultZero[0] === "O"){
             boxes[resultZero[1]].innerHTML = "O";
@@ -82,10 +117,7 @@ var botZero = function(){
             return; 
         }
     }
-
-    //проверка комбинаций на Х
     for (i = 0; i< winResult.length; i++){
-        // var resultZero = concat(i, i + 3, i + 6);
         var resultZero = concat(winResult[i][0], winResult[i][1], winResult[i][2]);
         if (typeof resultZero === "object" && resultZero[0] === "X"){
             boxes[resultZero[1]].innerHTML = "O";
@@ -127,7 +159,7 @@ itemGameZon.addEventListener('click',e =>{
     }
 
     if (result) {
-        setTimeout(() => prepareResult(result),500);
+        setTimeout(() => prepareResult(result),1000);
     }
 })
 
@@ -152,9 +184,9 @@ function check(){
             boxes[winResult[i][1]].style.backgroundColor = 'rgba(179, 168, 238, 0.8)';
             boxes[winResult[i][2]].style.backgroundColor = 'rgba(179, 168, 238, 0.8)';
 
-            result = " O win" ;
+            result = "O win" ;
         } else if(move === 9) {
-            result = " No win" ;
+            result = "Draw" ;
         }  
     }
 }
@@ -198,4 +230,4 @@ const closeResult = () =>{
 }
 
 overlay.addEventListener('click',closeResult);
-btnClose.addEventListener('click',closeResult);
+btnClose.addEventListener('click', closeResult);

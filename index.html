@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <h1>Tic-Tac</h1>
+        <h1>tic-tac-toe</h1>
         <div>
-            <button class="heder-button">Sound</button>
+            <button class="heder-button player-button play" data-audio="audio/sound.mp3">Sound:<span id="sound-switch-on">on</span> <span id="sound-switch-off">Off</span></button>
             <button class="heder-button" id="statistic" >Statistic</button>
             <div id="statistic-game">
                 <div id="modal-window-statistic">
@@ -30,13 +30,10 @@
                         </tbody>
                     </table>
                     <div class="statistic-btn">
-                        <button class="statistic-play" data-save="save">Save result</button>
+                        <button class="statistic-play" data-save="save">Сlear</button>
                         <button class="statistic-play" data-save="statistic-closes">Closes</button>
                     </div>
                 </div>
-        </div>
-            <button class="heder-button">Help</button>
-        </div>
     </header>
 
     <main>

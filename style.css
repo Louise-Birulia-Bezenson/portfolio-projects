@@ -318,3 +318,28 @@ main{
     flex-direction: column;
     width: 100%;
 }
+
+.player-button {
+    cursor: pointer;
+}
+
+.play {
+    cursor: pointer;
+   
+}
+
+.pause {
+    cursor: pointer;
+    background: var(--button);
+    box-shadow: 0 15px 20px rgba(179, 168, 238, 0.9);
+    color: white;
+    transform: translateY(-7px);
+}
+
+#sound-switch-on{
+    display: none;
+    
+}
+#sound-switch-off{
+    display: inline;
+}

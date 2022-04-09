@@ -72,8 +72,13 @@ gap: 60px;
 .help-list{
     display: flex;
     justify-content: center;
-    gap:120;
-    flex-wrap: wrap;
+    gap:120px;
+}
+
+.help-list1{
+    display: flex;
+    justify-content:center;
+    gap:120px;
 }
 
 .help-list-items{

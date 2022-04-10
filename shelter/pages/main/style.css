@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
 body {
     font-family: 'Arial';
     font-size: 15px;
@@ -246,7 +246,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 88px;
 }
 
 .pets-slider-items {
@@ -255,8 +255,17 @@ p {
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    border: 1px solid #fbfbfb;
     background-color: #FAFAFA;
+    cursor: pointer;
 }
+.pets-slider-items:hover .slider-button {
+    background: #F1CDB3;
+}
+.pets-slider-items:hover{
+    border: 1px solid #F1CDB3;
+}
+
 
 .slider-button {
     font-family: 'Georgia';
@@ -360,6 +369,10 @@ p {
    margin: 0 0 20px;
 }
 
+.donation-content a{
+    text-decoration: none;
+}
+
 .donation-content p {
     line-height: 110%;
     letter-spacing: 0.06em;
@@ -424,6 +437,18 @@ p {
 }
 
 .footer-content p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    margin: 0;
+}
+
+.footer-content a{
+    text-decoration: none;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;

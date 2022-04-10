@@ -1,0 +1,230 @@
+h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color: #545454;
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 40px;
+}
+
+.header {
+    padding: 60px 0 0;
+}
+.header span{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+color: #292929;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 36px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.header-nav a {
+    color: #545454;
+    text-decoration: none;
+    transition: color 1s;
+    cursor: pointer;
+    padding: 5px 0;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+}
+
+.header-nav .nav-active {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.header-nav a:hover {
+    cursor: pointer;
+    color: #161616;
+    transition: 1s;
+}
+
+.main{
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+}
+.main-title{
+padding: 80px 0 45px;
+}
+
+.pets-grid{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2,1fr);
+grid-column-gap: 40px;
+grid-row-gap: 40px;
+}
+
+.grid-items{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    border: 1px solid #FAFAFA ;
+    transition: 1s;
+    cursor: pointer;
+}
+.grid-items p{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #545454;
+}
+.grid-items button{
+    margin: 30px 41px;
+    border: 2px solid #F1CDB3;
+box-sizing: border-box;
+border-radius: 100px;
+background: none;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+color: #292929;
+padding: 15px 45px;
+transition: 1s;
+}
+.grid-items:hover{
+    border: 1px solid #F1CDB3 ;
+    transition: 1s;
+}
+.grid-items:hover button{
+    background-color: #F1CDB3;
+    transition: 1s;
+}
+.grid-items button:hover{
+    background-color: #F1CDB3;
+    border: 2px solid #FAFAFA  ;
+    transition: 1s;
+}
+.nav{
+    display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 59px 0 115px;
+}
+.nav-button{
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+color:#CDCDCD ;
+    width: 52px;
+    height: 52px;
+    background: none;
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    
+}
+.nav-button.activ-pages{
+    background: #F1CDB3;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+}
+.nav-button.existing-pages{
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+    cursor: pointer;
+
+}
+
+.nav-button.existing-pages:hover{
+    border-color:  #F6F6F6;
+    background: #F1CDB3;
+    border-radius: 100px;
+    transition: 1s;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-background {
+    background: url(/shelter/assets/img/background/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background-size: cover;
+}
+
+.footer-content {
+    width: 25%;
+    padding-top: 56px;
+}
+
+.footer-content h3 {
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
+.footer-content p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    margin: 0;
+}
+
+.footer-content a{
+    text-decoration: none;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    margin: 0;
+}
+
+.footer-content-col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    min-height: 46px;
+    margin-bottom: 24px;
+}
+
+.footer-img {
+    margin-top: 39px;
+}

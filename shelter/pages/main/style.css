@@ -1,3 +1,58 @@
+h1{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+color: #F1CDB3;
+letter-spacing: 0.06em;
+margin: 0 auto;
+}
+h2{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 130%;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+margin: 0 ;
+}
+h3{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+color: #545454;
+margin: 0 ;
+}
+h4{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+text-align: center;
+letter-spacing: 0.06em;
+color: #545454;
+margin: 0 auto;
+}
+h5{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.06em;
+color: #545454;
+margin: 0 auto;
+}
 .container{
     margin: 0 auto;
     max-width: 1280px;
@@ -5,10 +60,7 @@
 }
 
 .header{
-    /* 
-    padding: 60px 0;
-    background: linear-gradient(to top left, #1F1E1F, #524034); */
-    padding: 60px 0;
+    padding: 60px  0 0;
     position: absolute;
     left: 0;
     right: 0;
@@ -21,6 +73,19 @@
     justify-content: space-between;
 }
 
+.header-content span{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+margin: 10px 0 0;
+}
+
 .header-logo{
     margin: 0;
 }
@@ -30,21 +95,78 @@
     list-style-type: none;
     cursor: pointer;
 }
-a{
-    text-decoration: none;
+.nav-activ{
+    text-decoration: line-through;
 }
+.header-nav a{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #CDCDCD;
+text-decoration: none;
+transition: 1s;
+cursor: pointer;
+}
+
+.header-nav a:hover{
+    cursor: pointer;
+    color: #fafafa;
+    transition: 1s;
+}
+
+
+
 
 .start-screen{
     background: url(/shelter/assets/img/background/start-screen-gradient-background.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    padding-top: 160px;
-    /* min-height: 728px; */
+    padding-top: 180px;
 }
 
 .start-screen-content {
     align-items: center;
     display: flex;
 }
+.start-screen-content p{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #CDCDCD;
+    margin: 0 auto;
+}
+.start-screen-button{
+width: 207px;
+height: 52px;
+background: #F1CDB3;
+border: 5px solid #F1CDB3;
+border-radius: 100px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+cursor: pointer;
+transition: 1s;
+}
 
+.start-screen-button:hover{
+    background: #F1CDB3;
+    border: 5px solid #b2815e;
+   
+}
+.content-text{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+gap: 45px;
+}
 .about{
     
 }
@@ -66,6 +188,15 @@ a{
 .about-text {
     width: 70%;
 }
+.about-text p{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #4C4C4C;
+}
+
 .pets-bg{
     background-color: #F6F6F6;
 }
@@ -76,6 +207,7 @@ flex-direction: column;
 align-items: center;
 padding: 80px 0 100px;
 gap: 60px;
+text-align: center;
 }
 
 .pets-content{
@@ -112,6 +244,52 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 30px;
+background-color: #FAFAFA;
+}
+.slider-button{
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 15px 45px;
+    background:none;
+    margin: 0 0 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+.slider-button:hover{
+    border: 2px solid #fbfbfb;
+    background:#F1CDB3;
+    transition: 1s;
+}
+
+.pets-button{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+width: 261px;
+height: 52px;
+left: 470px;
+top: 645px;
+background: #F1CDB3;
+border-radius: 100px;
+cursor: pointer;
+border: 2px solid  #F1CDB3;
+transition: 1s;
+}
+.pets-button:hover{
+    background: #f8f7f6;
+    transition: 1s;
 }
 
 
@@ -119,6 +297,7 @@ gap: 30px;
  display: flex;
 flex-direction: column;
 align-items: center;
+text-align: center;
 padding: 80px 0 100px;
 gap: 60px;
 }
@@ -167,6 +346,53 @@ gap: 60px;
     justify-content: flex-start;
     gap:20px;
 }
+.donation-content p{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+color: #545454;
+margin: 0 ;
+}
+
+.donation-content span{
+font-family: 'Arial';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #B2B2B2;
+margin: 0 ;
+}
+.donation-button{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+color: #545454;
+margin: 0 ;
+background: #F1CDB3;
+border-radius: 9px;
+padding: 10px;
+width: 349px;
+height: 43px;
+text-align: center;
+border:none;
+cursor: pointer;
+}
+.donation-button-img{
+    margin: 0 15px 0 0;
+}
 
 .footer{
     display: flex;
@@ -176,6 +402,7 @@ gap: 60px;
 }
 .footer-background{
 background: url(/shelter/assets/img/background/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+background-size: cover;
 }
 
 .footer-content{
@@ -183,4 +410,30 @@ background: url(/shelter/assets/img/background/footer-gradient-background.png), 
     flex-direction: column;
     justify-content:flex-start;
     gap:45px;
+    flex: 1;
+}
+.footer-content h3{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+.footer-content p{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+color: #F1CDB3;
+margin: 0;
+}
+.footer-content-col{
+display: flex;
+align-items: center;
+gap: 20px;
+flex-wrap: nowrap;
 }

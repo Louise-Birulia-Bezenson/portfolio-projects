@@ -189,7 +189,7 @@ color:#CDCDCD ;
 }
 
 .footer-background {
-    background: url(/shelter/assets/img/background/footer-gradient-background.png);
+    background: url(../../assets/img/background/footer-gradient-background.png);
     background-size: cover;
     margin: -15px;
     padding: 0 15px;

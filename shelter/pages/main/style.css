@@ -258,12 +258,14 @@ p {
     border: 1px solid #fbfbfb;
     background-color: #FAFAFA;
     cursor: pointer;
+    border-radius: 10px;
 }
 .pets-slider-items:hover .slider-button {
     background: #F1CDB3;
 }
 .pets-slider-items:hover{
     border: 1px solid #F1CDB3;
+    background-color: #f6e4d8;
 }
 
 

@@ -114,19 +114,20 @@ p {
 .header-nav a {
     color: #CDCDCD;
     text-decoration: none;
-    transition: color 1s;
+    transition: color 0.5s;;
     cursor: pointer;
     padding: 5px 0;
 }
 
 .header-nav .nav-active {
     border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
 }
 
 .header-nav a:hover {
     cursor: pointer;
     color: #fafafa;
-    transition: 1s;
+    transition: 0.5s;;
 }
 
 .start-screen {
@@ -151,8 +152,8 @@ p {
 .start-screen-button {
     width: 207px;
     height: 52px;
+    border: none;
     background: #F1CDB3;
-    border: 5px solid #F1CDB3;
     border-radius: 100px;
     font-family: 'Georgia';
     font-style: normal;
@@ -162,12 +163,12 @@ p {
     letter-spacing: 0.06em;
     color: #292929;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;;
 }
 
 .start-screen-button:hover {
-    background: #F1CDB3;
-    border: 5px solid #b2815e;
+    background: #FDDCC4;
+ 
 
 }
 
@@ -233,11 +234,11 @@ p {
     background: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;;
 }
 
 .slider-nav:hover {
-    transition: 1s;
+    transition: 0.5s;;
     background: #F1CDB3;
     border: 1px solid #dfcabb;
 }
@@ -255,7 +256,7 @@ p {
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    border: 1px solid #fbfbfb;
+    border: none;
     background-color: #FAFAFA;
     cursor: pointer;
     border-radius: 10px;
@@ -264,8 +265,7 @@ p {
     background: #F1CDB3;
 }
 .pets-slider-items:hover{
-    border: 1px solid #F1CDB3;
-    background-color: #f6e4d8;
+    background-color: #ffffff;
 }
 
 
@@ -313,7 +313,7 @@ p {
 
 .pets-button:hover {
     background: #f8f7f6;
-    transition: 1s;
+    transition: 0.5s;;
 }
 
 
@@ -412,6 +412,11 @@ p {
     border: none;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.donation-button:hover {
+    background:#FDDCC4;
 }
 
 .donation-button-img {

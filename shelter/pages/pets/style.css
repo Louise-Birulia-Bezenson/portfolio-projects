@@ -48,6 +48,9 @@ letter-spacing: 0.12em;
     cursor: pointer;
 }
 
+#menu-toggle{
+    display: none;
+}
 .header-nav a {
     color: #545454;
     text-decoration: none;

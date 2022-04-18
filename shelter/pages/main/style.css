@@ -104,6 +104,9 @@ p {
 .header-logo {
     margin: 0;
 }
+#menu-toggle{
+    display: none;
+}
 
 .header-nav {
     display: flex;
@@ -812,6 +815,7 @@ line-height: 110%;
             min-height: 46px;
             margin-bottom: 3px;
             margin-top: 24px;
+            justify-content: center;
         }
         .footer-img {
             margin-top: 44px;
@@ -824,7 +828,7 @@ line-height: 110%;
 
       .menu-btn {
     position: relative;
-    top: -7px;
+    top: 11px;
     left: -46px;
     width: 26px;
     height: 26px;

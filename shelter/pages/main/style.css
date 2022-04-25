@@ -261,12 +261,46 @@ p {
         overflow: hidden;
 }
 
-.pets-content {
+.pet-card{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 53px;
-    margin: 59px 0 60px;
+    gap: 30px;
+}
+.pet-card img{
+    width: 50%;
+}
+.pet-description{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left; 
+}
+
+.pets-content {
+    margin: 59px 105px 60px;
+    position: relative;
+}
+.tns-controls button {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border:2px solid #F1CDB3;
+    background: none;
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+}
+.tns-controls button[data-controls="prev"]{
+    left: -52px;
+}
+
+.tns-controls button[data-controls="next"]{
+    right: -52px;
+}
+.tns-controls button:hover{
+    
+    background-color: #F1CDB3;
 }
 
 .slider-nav {
@@ -285,12 +319,12 @@ p {
     border: 1px solid #dfcabb;
 }
 
-.pets-slider {
+/* .pets-slider {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 88px;
-}
+} */
 
 .pets-slider-items {
     display: flex;
@@ -302,6 +336,7 @@ p {
     background-color: #FAFAFA;
     cursor: pointer;
     border-radius: 10px;
+    margin: 0 15px;
 }
 .pets-slider-items:hover .slider-button {
     background: #F1CDB3;
@@ -579,9 +614,9 @@ p {
 .dispay{
     display: none;
 }
-.pets-slider {
+/* .pets-slider {
     gap: 40px;
-}
+} */
 .pets-content {
     gap: 12px;
 }
@@ -710,7 +745,7 @@ font-weight: 400;
 font-size: 25px;
 line-height: 130%;
 }
-.pets-content {
+/* .pets-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -719,7 +754,20 @@ line-height: 130%;
     margin: 42px 0 40px;
     position: relative;
     padding: 0 0 73px;
+} */
+.tns-controls button[data-controls="next"] {
+right: 68px;
 }
+.pets-content{
+    margin: 0 0 0 0;
+    padding-bottom: 114px ;
+}
+.tns-controls button{
+    top: 90%
+}
+.tns-controls button[data-controls="prev"] {
+    left: 68px;
+    }
 .slider-nav{
     bottom: 0;
 }

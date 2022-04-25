@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>Shelter</title>
 </head>
 
@@ -75,12 +76,84 @@
             <div class="container">
                 <div class="pets">
                     <button class="close-about-pet">╳</button>
-                    <div id="about-pet"></div>
+                    <div id="about-pet">
+                        <div class="pet-card">
+                            <img id ="img"src="../../assets/img-pets/pets-katrine.png">
+                        <div class="pet-description">
+                            <h3 id ="name">Name</h3>
+                            <h4 id="type">Pet</h4>
+                            <h5 id="description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
+                            <ul>
+                                <li id="age">Age:</li>
+                                <li id="inoculations">Inoculations: none</li>
+                                <li id="diseases">Diseases: none</li>
+                                <li id="parasites">Parasites: none</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
                     <div id="frame-about-pet"></div>
                     <h3>Our friends who <br>are looking for a house</h3>
                     <div class="pets-content">
-                        <button class="slider-nav slider-nav-l">←</button>
+                        <!--<button class="slider-nav slider-nav-l">←</button>-->
                         <div class="pets-slider">
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img/pets-katrine.png" alt="Katrine">
+                                    <h5>Katrine</h5>
+                                    <button data-name="Katrine"class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img/pets-jennifer.png" alt="Jennifer">
+                                    <h5>Jennifer</h5>
+                                    <button data-name="Jennifer" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img/pets-woody.png" alt="Woody">
+                                    <h5>Woody</h5>
+                                    <button data-name="Woody" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img-pets/pets-sophia.png" alt="pets-sophia">
+                                    <h5>Sophia</h5>
+                                    <button data-name="Sophia" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img-pets/pets-timmy.png" alt="pets-timmy">
+                                    <h5>Timmy</h5>
+                                    <button data-name="Timmy" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img-pets/pets-charly.png" alt="pets-charly">
+                                    <h5>Charly</h5>
+                                    <button data-name="Charly" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img-pets/pets-scarlet.png" alt="pets-scarlet">
+                                    <h5>Scarlet</h5>
+                                    <button data-name="Scarlet" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pets-slider-items">
+                                    <img src="../../assets/img-pets/pets-freddie.png" alt="pets-freddie">
+                                    <h5>Freddie</h5>
+                                    <button data-name="Freddie" class="slider-button">Learn more</button>
+                                </div>
+                            </div>
+                            <!--
                             <div class="pets-slider-items">
                                 <img src="../../assets/img/pets-katrine.png" alt="Katrine">
                                 <h5>Katrine</h5>
@@ -96,8 +169,9 @@
                                 <h5>Woody</h5>
                                 <button class="slider-button">Learn more</button>
                             </div>
+                            -->
                         </div>
-                        <button class="slider-nav slider-nav-r">→</button>
+                       <!-- <button class="slider-nav slider-nav-r">→</button>-->
                     </div>
                     <a href="../../pages/pets/index.html"><button class="pets-button">Get to know the rest</button></a>
                 </div>
@@ -199,7 +273,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../../assets/js/script.js"></script>
 </body>
 </html>

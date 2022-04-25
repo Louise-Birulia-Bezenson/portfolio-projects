@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <title>Shelter. Our pets</title>
 </head>
 <body>
@@ -37,51 +38,68 @@
     <main class="main">
         <div class="container">
             <button class="close-about-pet">╳</button>
-                    <div id="about-pet"></div>
+                    <div id="about-pet">
+                        <div class="pet-card">
+                            <img id ="img"src="../../assets/img-pets/pets-katrine.png">
+                        <div class="pet-description">
+                            <h3 id ="name">Name</h3>
+                            <h4 id="type">Pet</h4>
+                            <h5 id="description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
+                            <ul>
+                                <li id="age">Age:</li>
+                                <li id="inoculations">Inoculations: none</li>
+                                <li id="diseases">Diseases: none</li>
+                                <li id="parasites">Parasites: none</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
                     <div id="frame-about-pet"></div>
             <h3 class="main-title">Our friends who<br>are looking for a house</h3>
+            <div class="pets-content">
                 <div class="pets-grid">
                     <div class="grid-items">
                         <img src="../../assets/img-pets/pets-katrine.png" alt="pets-katrine">
                         <p>Katrine</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Katrine" class="slider-button">Learn more</button>
                     </div>
                     <div class="grid-items">
                         <img src="../../assets/img-pets/pets-jennifer.png" alt="pets-jennifer">
                         <p>Jennifer</p>
-                        <button class="slider-button">Learn more</button> 
+                        <button data-name="Jennifer" class="slider-button">Learn more</button> 
                     </div>
                     <div class="grid-items">
                         <img src="../../assets/img-pets/pets-woody.png" alt="pets-woody">
                         <p>Woody</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Woody" class="slider-button">Learn more</button>
                     </div>
                     <div class="grid-items dispay-320">
                         <img src="../../assets/img-pets/pets-sophia.png" alt="pets-sophia">
                         <p>Sophia</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Sophia" class="slider-button">Learn more</button>
                     </div>
                     <div class="grid-items dispay-320">
                         <img src="../../assets/img-pets/pets-timmy.png" alt="pets-timmy">
                         <p>Timmy</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Timmy" class="slider-button">Learn more</button>
                     </div>
                     <div class="grid-items dispay-320">
                         <img src="../../assets/img-pets/pets-charly.png" alt="pets-charly">
                         <p>Charly</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Charly" class="slider-button">Learn more</button>
                     </div>
                     <div class="grid-items dispay-768 dispay-320">
                         <img src="../../assets/img-pets/pets-scarlet.png" alt="pets-scarlet">
                         <p>Scarlet</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Scarlet" class="slider-button">Learn more</button>
                     </div>
                     <div class="grid-items dispay-768 dispay-320">
                         <img src="../../assets/img-pets/pets-freddie.png" alt="pets-freddie">
                         <p>Freddie</p>
-                        <button class="slider-button">Learn more</button>
+                        <button data-name="Freddie" class="slider-button">Learn more</button>
                     </div>
                 </div>
+            </div>    
                 <div class="nav">
                     <button class="nav-button"> < < </button>
                     <button class="nav-button"> < </button>
@@ -120,7 +138,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../../assets/js/script.js"></script>
 </body>
 </html>

@@ -110,6 +110,47 @@ h3{
     background-color: #F1CDB3;
     transition: 1s;
 }
+.pet-description h5{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    color: #000;
+    text-align: justify;
+    margin: 0 10px 0;
+}
+.pet-description h3{
+   font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #000;
+text-align: center;
+}
+.pet-description h4{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+color: #000;
+text-align: center;
+margin-bottom: 20px;
+}
+.pet-description span{
+    font-weight: 400;
+}
+.pet-description ul{
+    text-align: start;
+    padding-inline-start: 23px;
+}
+.pet-description li{
+    font-weight: 600;
+    color: #000; 
+    text-align: start;
+}
 #about-pet{
     display:none;
     position: fixed;
@@ -325,6 +366,47 @@ body{
 .dispay-768{
     display: none;
 }
+.pet-description h5{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    color: #000;
+    text-align: justify;
+    margin: 0 10px 0;
+}
+.pet-description h3{
+   font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+color: #000;
+text-align: center;
+}
+.pet-description h4{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+color: #000;
+text-align: center;
+margin-bottom: 20px;
+}
+.pet-description span{
+    font-weight: 400;
+}
+.pet-description ul{
+    text-align: start;
+    padding-inline-start: 23px;
+}
+.pet-description li{
+    font-weight: 600;
+    color: #000; 
+    text-align: start;
+}
 .pets-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3,1fr);
@@ -421,7 +503,51 @@ body{
         line-height: 130%;
         padding: 42px 0 16px;
     }
+    #about-pet {
+        left: 50px;
+    }
 
+    .pet-description h5{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        color: #000;
+        text-align: justify;
+        margin: 0 10px 0;
+    }
+    .pet-description h3{
+        font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #000;
+    text-align: center;
+    }
+    .pet-description h4{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .pet-description span{
+        font-weight: 400;
+    }
+    .pet-description ul{
+        text-align: start;
+        padding-inline-start: 23px;
+    }
+    .pet-description li{
+        font-weight: 600;
+        color: #000; 
+        text-align: start;
+    }
     .pets-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
